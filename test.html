@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Margin Logical Properties Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .demo-box {
+    width: 200px;
+    background: lightblue;
+    border: 2px solid navy;
+    padding: 10px;
+    color: darkblue;
+  }
+
+  /* Baseline box without margins */
+  .box0 {
+    margin: 0;
+  }
+
+  /* margin-block-start sets margin at block start (top in horizontal writing) */
+  .box1 {
+    margin-block-start: 0.67em; /* approx 10-11px if font size ~16px */
+    background: #add8e6;
+  }
+
+  /* margin-block-end sets margin at block end (bottom) */
+  .box2 {
+    margin-block-end: 0.67em;
+    background: #87ceeb;
+  }
+
+  /* margin-inline-start sets margin at inline start (left in LTR) */
+  .box3 {
+    margin-inline-start: 0.67em;
+    background: #6495ed;
+  }
+
+  /* margin-inline-end sets margin at inline end (right in LTR) */
+  .box4 {
+    margin-inline-end: 0.67em;
+    background: #4169e1;
+  }
+</style>
+</head>
+<body>
+
+<h2>Margin Logical Properties Demo</h2>
+
+<p>All boxes have width 200px, border, and padding but different margins based on logical properties.</p>
+
+<div class="demo-box box0">Baseline box - no margin</div>
+<div class="demo-box box1">margin-block-start: 0.67em (top margin)</div>
+<div class="demo-box box2">margin-block-end: 0.67em (bottom margin)</div>
+<div class="demo-box box3">margin-inline-start: 0.67em (left margin)</div>
+<div class="demo-box box4">margin-inline-end: 0.67em (right margin)</div>
+
+</body>
+</html>
